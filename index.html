@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tracer</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- JS -->
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main>
+        <header class="d-flex">
+            <h1>Fin your film</h1>
+            <h4><a href="watchlist.html"> My Watchlist</a></h4>
+            <div class="form-container">
+                <form action="#" id="movie-form">
+                    <img src="icons/Search.svg" alt="search icon">
+                    <input 
+                        type="search"
+                        id="search-input"
+                        name="Search-input"
+                        placeholder="Search for a movie"
+                        aria-label="Search input" 
+                        required
+                    >
+                    <input type="submit" value="search">
+                </form>
+            </div>
+        </header>
+        <article class="d-flex-center">
+            <div class="container" id="movies-display-area-main" >
+                <section class="nothing-yet">
+                    <img src="icons/icon.svg" alt="no film yet icon">
+                    <p>Start exploring</p>
+                </section>                
+            </div>
+        </article>
+        <div id="message-container">
+            <div class="confirm-message">
+                <p id="message"></p>
+                <div id="close-btn">&times;</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
